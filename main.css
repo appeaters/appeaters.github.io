@@ -60,9 +60,7 @@ body {
 }
 
 .navbar a:hover {
-    background-color: #E88649;
-    color: #ffffff;
-    padding: 30px 40px;
+    color: #2FADE2;
 }
 
 .logo-img{
