@@ -23,3 +23,7 @@ $(document).ready(function(){
     } // End if
   });
 });
+
+function myFunction(x) {
+    x.classList.toggle("change");
+}
