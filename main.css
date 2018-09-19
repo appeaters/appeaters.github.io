@@ -115,6 +115,8 @@ body {
 .mission-statement {
     margin: 20px;
     color: #ffffff;
+    padding-top: 20px;
+    padding-bottom: 50px;
 }
 
 .mission-statement h1 {
