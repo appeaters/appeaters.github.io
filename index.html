@@ -20,26 +20,20 @@
 <body>
     <header>
     <!--Navigation-->
-    <nav class="navbar">
+    <div class="nav">
         <a href="index.html"><img class="logo-img" src="img/logo_white.png" alt="Appeater Logo" height="60" width="60"></a>
-
-        <div class="container" onclick="myFunction(this)">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
+        <label for="toggle">&#9776;</label>
+        <input type="checkbox" id="toggle"/>
+        <div class="menu">
+            <a href="#projects">Projects</a>
+            <a href="#partners">Partners</a>
+            <a href="team.html">Team</a>
+            <a href="#contact">Contact Us</a>
         </div>
-
-        <ul>
-            <li><a href="#contact">Contact Us</a></li>
-            <li><a href="team.html">Team</a></li>
-            <li><a href="#partners">Partners</a></li>
-            <li><a href="#projects">Projects</a></li>
-        </ul>
-    </nav>
+    </div>
 
     <!--Header Banner-->
     <div class="banner">
-        <img src="img/logo_white.png" alt="Appeater Logo" height="60" width="60">
         <h1>Emerging Technology for Speech Therapy</h1>
         <h2>Using usability, mobility and playability heuristics to evaluate mobile applications for children</h2>
         <button type="button"><a href="#problemstatement">Learn More</a></button>

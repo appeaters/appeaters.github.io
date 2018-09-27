@@ -1,72 +1,71 @@
-body {
+body, header{
     margin: 0;
-    padding: 0;
     background: #2FADE2;
     font-family: Muli, Helvetica,Arial,sans-serif;
     text-align: center;
+    width: 100%;
+    height: 100%;
 }
 
-.container {
-    display: none;
-    cursor: pointer;
-    float: right;
-    margin: 20px 20px 0px 0px;
-}
-
-.bar1, .bar2, .bar3 {
-    width: 30px;
-    height: 5px;
-    background-color: #E88649;
-    margin: 6px 0;
-    transition: 0.4s;
-}
-
-.change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-    transform: rotate(-45deg) translate(-9px, 6px);
-}
-
-.change .bar2 {opacity: 0;}
-
-.change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px);
-    transform: rotate(45deg) translate(-8px, -8px);
-}
-
-
-.navbar {
-    overflow: hidden;
-    background: 0;
-    z-index: 100;
+.nav {
+    border-bottom: 1px solid #EAEAEB;
+    text-align: right;
+    height: 75px;
+    line-height: 70px;
+    background-color: #ffffff;
     position: fixed;
     width: 100%;
-    transition: 0.3s;
+    top: 0;
+}
+
+.menu {
+    text-align: center;
+    width: 100%;
+    display: none;
+    font-size: 20px;
+}
+
+.menu a {
+    display: block;
+    border-bottom: 1px solid #EAEAEB;
+    text-decoration: none;
+    color: #E88649;
+    margin: 0;
+    line-height: 70px;
+    clear: right;
     background-color: #ffffff;
 }
 
-
-.navbar li {
-    display: inline-block;
-    float: right;
-    padding: 10px 16px;
-}
-
-
-.navbar a{
-    text-decoration: none;
-    font-size: 17px;
-    color: #E88649;
-    font-weight: bold;
-}
-
-.navbar a:hover {
+.menu a:hover {
     color: #2FADE2;
 }
+
+label {
+    display: block;
+    cursor: pointer;
+    font-size: 30px;
+    line-height: 70px;
+    width: 26px;
+    float: right;
+    color: #E88649;
+    margin: 5px 20px 0px 0px;
+}
+
+#toggle {
+    display: none;
+}
+
+#toggle:checked + .menu {
+    display: block;
+}
+
 
 .logo-img{
     float: left;
     position: relative;
-    margin: 8px 15px 10px 25px;
+    margin: 5px 15px 6px 25px;
+    border: 1px solid #021a40;
+    border-radius: 12px;
 }
 
 .scrolled{
@@ -76,20 +75,14 @@ body {
 
 .banner {
     background-image: url(img/background.jpg);
-    padding: 150px 10px 50px 30px;
+    padding: 120px 30px 80px 30px;
 }
 
-.banner img {
-    border: 1px solid #021a40;
-    height: 80px;
-    width: 80px;
-    border-radius: 12px;
-}
 
 .banner h1{
     font-size: 40px;
     color: #E88649;
-    margin-top: 20px;
+    margin-top: 0px;
 }
 
 .banner h2{
@@ -100,6 +93,7 @@ body {
 }
 
 .banner button {
+    margin-top: 10px;
     padding: 12px 20px;
     background-color: #E88649;
     border: none;
@@ -491,18 +485,21 @@ footer h1{
 }
 
 @media screen and (min-width: 675px) {
-    .container {
+    label {
         display: none;
-        cursor: pointer;
-        float: right;
-        margin: 20px 20px 0px 0px;
     }
 
-    .navbar li {
-        display: block;
-        float: right;
-        padding: 14px 16px;
-        margin-right: 20px;
+    .menu {
+        margin: 0 15px 0 0;
+        display: inline;
+    }
+
+    .menu a {
+        margin: 0 12px;
+        display: inline;
+        border-bottom: none;
+        font-weight: bold;
+        font-size: 20px;
     }
 
     .banner {
