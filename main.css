@@ -75,7 +75,7 @@ label {
 
 .banner {
     background-image: url(img/background.jpg);
-    padding: 120px 30px 80px 30px;
+    padding: 150px 30px 80px 30px;
 }
 
 
@@ -503,7 +503,7 @@ footer h1{
     }
 
     .banner {
-        padding: 150px 50px 80px 50px;
+        padding: 150px 130px 80px 130px;
     }
 
     .banner img {
@@ -523,7 +523,7 @@ footer h1{
         font-size: 25px;
         color: #2FADE2;
         font-weight: normal;
-        margin: 20px 100px 30px 100px;
+        margin: 20px 50px 30px 50px;
     }
 
     .research-des h1 {
@@ -632,9 +632,9 @@ footer h1{
 
 }
 
-@media screen and (min-width: 903px) {
+@media screen and (min-width: 1050px) {
     .banner {
-        padding: 150px 50px 110px 50px;
+        padding: 150px 130px 110px 130px;
     }
 
     .banner img {
